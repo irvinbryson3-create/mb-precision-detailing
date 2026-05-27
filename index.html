@@ -1,59 +1,129 @@
+
+<!DOCTYPE html>
 <html>
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
-      max-width: 900px;
-      margin: auto;
+<head>
+  <title>MB Precision Detailing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0c10;
+      color: #fff;
     }
 
-    .img {
-      height: 160px;
-      background: #222;
-      border-radius: 12px;
+    /* HERO */
+    .hero {
+      padding: 90px 20px 60px;
+      text-align: center;
+      background: linear-gradient(135deg, #000, #0a1f33);
     }
 
-    .purpose-text {
-      max-width: 800px;
+    .logo {
+      width: 90px;
+      height: 90px;
       margin: auto;
-      line-height: 1.6;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #000, #1e90ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-size: 40px;
+    }
+
+    .tagline {
+      color: #aaa;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 15px 6px 0;
+      padding: 10px 16px;
+      border: 1px solid #1e90ff;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #1e90ff;
+    }
+
+    /* SECTION */
+    .section {
+      max-width: 750px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #1e90ff;
+    }
+
+    p {
       color: #ccc;
-      font-size: 16px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* CARD */
+    .card {
+      background: #14161b;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 15px;
+      border: 1px solid #222;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 12px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="header">
-
-    <!-- Professional SVG Logo -->
-    <div class="logo">
-      <svg viewBox="0 0 500 300" width="160" height="160">
-        <defs>
-          <linearGradient id="g" x1="0" x2="1">
-            <stop offset="0%" stop-color="#0a0a0a" />
-            <stop offset="100%" stop-color="#1e90ff" />
-          </linearGradient>
-        </defs>
-        <rect width="500" height="300" fill="#05060a" rx="20"/>
-        <path d="M80 180 Q150 100 250 120 Q350 140 420 180" stroke="url(#g)" stroke-width="10" fill="none"/>
-        <circle cx="170" cy="200" r="25" fill="#1e90ff"/>
-        <circle cx="330" cy="200" r="25" fill="#1e90ff"/>
-        <text x="250" y="260" text-anchor="middle" fill="#ffffff" font-size="36" font-weight="bold">MB Precision</text>
-      </svg>
-    </div>
-
+  <!-- HERO -->
+  <div class="hero">
+    <div class="logo">MB</div>
     <h1>MB Precision Detailing</h1>
     <div class="tagline">Premium Car Detailing in Kentucky</div>
+
+    <a class="btn" href="tel:5026126815">Call Bryson</a>
+    <a class="btn" href="https://www.instagram.com/mbpercisiondetailing_/" target="_blank">Instagram</a>
   </div>
 
-  <!-- PURPOSE SECTION -->
+  <!-- PURPOSE -->
   <div class="section">
     <h2>Our Purpose</h2>
-    <p class="purpose-text">
-      At MB Precision Detailing, our purpose is to restore, protect, and elevate every vehicle we work on with unmatched precision and care. We are committed to delivering showroom-quality results through professional-grade detailing, attention to every small detail, and a dedication to customer satisfaction. Our goal is to make every client proud of their vehicle and confident in the way it looks and feels.
+    <p>
+      At MB Precision Detailing, our purpose is simple — to restore and protect every vehicle with precision,
+      care, and attention to detail. We aim to deliver clean, professional results that make every car look its best.
     </p>
   </div>
 
+  <!-- CONTACT -->
   <div class="section">
     <h2>Contact</h2>
     <div class="card">
@@ -62,22 +132,18 @@
     </div>
   </div>
 
+  <!-- INSTAGRAM -->
   <div class="section">
-    <h2>Instagram</h2>
-    <div class="card">
+    <h2>Follow Us</h2>
+    <p>
       <a href="https://www.instagram.com/mbpercisiondetailing_/" target="_blank">
-        Visit Our Instagram
+        @mbpercisiondetailing_
       </a>
-    </div>
+    </p>
   </div>
 
-  <div class="section">
-    <h2>Our Work</h2>
-    <div class="gallery">
-      <div class="img"></div>
-      <div class="img"></div>
-      <div class="img"></div>
-    </div>
+  <div class="footer">
+    MB Precision Detailing © 2026
   </div>
 
 </body>
