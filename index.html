@@ -1,57 +1,71 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>MB Precision Detailing</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0b0c10;
-      color: #fff;
+      background: #05060a;
+      color: white;
     }
 
     /* HERO */
     .hero {
-      padding: 90px 20px 60px;
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+                  url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      background: linear-gradient(135deg, #000, #0a1f33);
+      padding: 20px;
     }
 
     .logo {
-      width: 90px;
-      height: 90px;
-      margin: auto;
+      width: 140px;
+      height: 140px;
       border-radius: 18px;
       background: linear-gradient(135deg, #000, #1e90ff);
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 28px;
       font-weight: bold;
-      font-size: 24px;
-      letter-spacing: 1px;
+      border: 2px solid #1e90ff;
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin: 18px 0 8px;
-      font-size: 40px;
-    }
-
-    .tagline {
-      color: #aaa;
-      font-size: 15px;
+      font-size: 48px;
+      margin: 10px 0;
       letter-spacing: 1px;
     }
 
+    .tagline {
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .btn {
-      display: inline-block;
-      margin: 15px 6px 0;
-      padding: 10px 16px;
-      border: 1px solid #1e90ff;
+      padding: 12px 18px;
       border-radius: 8px;
-      color: #fff;
+      border: 1px solid #1e90ff;
+      color: white;
       text-decoration: none;
-      font-size: 14px;
+      font-weight: bold;
+      transition: 0.2s;
     }
 
     .btn:hover {
@@ -60,31 +74,28 @@
 
     /* SECTION */
     .section {
-      max-width: 750px;
+      max-width: 800px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
       color: #1e90ff;
+      margin-bottom: 15px;
     }
 
     p {
       color: #ccc;
-      line-height: 1.6;
-      font-size: 15px;
+      line-height: 1.7;
     }
 
-    /* CARD */
     .card {
-      background: #14161b;
+      background: #10131a;
       padding: 18px;
-      border-radius: 10px;
+      border-radius: 12px;
+      border: 1px solid #1a1f2b;
       margin-top: 15px;
-      border: 1px solid #222;
     }
 
     a {
@@ -95,8 +106,8 @@
 
     .footer {
       text-align: center;
-      padding: 30px;
-      color: #666;
+      padding: 25px;
+      color: #555;
       font-size: 12px;
     }
   </style>
@@ -106,20 +117,26 @@
 
   <!-- HERO -->
   <div class="hero">
+
     <div class="logo">MB</div>
+
     <h1>MB Precision Detailing</h1>
     <div class="tagline">Premium Car Detailing in Kentucky</div>
 
-    <a class="btn" href="tel:5026126815">Call Bryson</a>
-    <a class="btn" href="https://www.instagram.com/mbpercisiondetailing_/" target="_blank">Instagram</a>
+    <div class="buttons">
+      <a class="btn" href="tel:5026126815">Call Bryson</a>
+      <a class="btn" href="tel:2708663229">Call Maddox</a>
+      <a class="btn" href="https://www.instagram.com/mbpercisiondetailing_/" target="_blank">Instagram</a>
+    </div>
+
   </div>
 
   <!-- PURPOSE -->
   <div class="section">
     <h2>Our Purpose</h2>
     <p>
-      At MB Precision Detailing, our purpose is simple — to restore and protect every vehicle with precision,
-      care, and attention to detail. We aim to deliver clean, professional results that make every car look its best.
+      At MB Precision Detailing, we are dedicated to restoring, protecting, and elevating every vehicle with precision,
+      care, and attention to detail. We aim to deliver high-end results that exceed expectations and bring pride to every customer.
     </p>
   </div>
 
@@ -135,11 +152,9 @@
   <!-- INSTAGRAM -->
   <div class="section">
     <h2>Follow Us</h2>
-    <p>
-      <a href="https://www.instagram.com/mbpercisiondetailing_/" target="_blank">
-        @mbpercisiondetailing_
-      </a>
-    </p>
+    <a href="https://www.instagram.com/mbpercisiondetailing_/" target="_blank">
+      @mbpercisiondetailing_
+    </a>
   </div>
 
   <div class="footer">
@@ -148,3 +163,4 @@
 
 </body>
 </html>
+
