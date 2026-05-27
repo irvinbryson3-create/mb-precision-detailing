@@ -14,3 +14,5 @@ export default function Home() {
         Visit Our Instagram
       </a>
     </div>
+  );
+}
